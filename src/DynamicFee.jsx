@@ -7,6 +7,7 @@ import {useParams} from "react-router-dom";
 function DynamicFee() {
     const {contractAddress} = useParams();
     console.log(contractAddress);
+    //todo WIP for fetch data from backend. Because we have some issues with this
     // const [data, setData] = useState([]);
 
     const data = [
