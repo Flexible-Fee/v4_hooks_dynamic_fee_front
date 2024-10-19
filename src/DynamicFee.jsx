@@ -29,7 +29,8 @@ function DynamicFee() {
     // setData([])
     console.log(data)
     return (
-        <Box style={{display: 'flex',
+        <Box style={{
+            display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
             minHeight: '100vh'
