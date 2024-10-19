@@ -1,18 +1,19 @@
 import {useState} from 'react'
 import './App.css'
-import {Box, FormControl, TextField,} from "@mui/material";
+import {Box, Button, FormControl, TextField,} from "@mui/material";
+import {Link} from 'react-router-dom';
 
 function App() {
 
     const [contractAddress, setContractAddress] = useState('');
 
     return (
-        <Box sx={{display: 'flex', flexWrap: 'wrap'}}>
+        <Box sx={{display: 'flex', flexWrap: 'wrap', mr: 0}}>
             <div>
-                <FormControl fullWidth sx={{m: 1}} variant="standard">
+                <FormControl fullWidth sx={{}} variant="standard">
                     <TextField
-                        sx = {{
-                            width: '50ch'
+                        sx={{
+                            width: '500px'
                         }}
                         label="Input contract address"
                         id="ca"
@@ -20,6 +21,17 @@ function App() {
                             setContractAddress(event.target.value);
                         }}
                     />
+                    <Button component={Link}
+                            to={`/fee/${contractAddress}`}
+                            variant="contained"
+                            color="primary"
+                            sx={{
+                                marginTop: '10px',
+                                width: '500px'
+                            }}
+                    >
+                        Find dynamic fee for contact address
+                    </Button>
                 </FormControl>
             </div>
         </Box>

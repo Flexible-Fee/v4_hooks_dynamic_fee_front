@@ -5,9 +5,8 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background: linear-gradient(189.09deg, rgba(123, 107, 217, 0.75) -2.31%, rgba(206, 102, 255, 0.75) 100.67%);
   background-attachment: fixed;
-
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
